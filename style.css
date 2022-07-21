@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 *
 {
   margin: 0;
@@ -69,9 +70,13 @@ header ul li a
   font-weight: 300;
   transition: 0.6s;
 }
+
 .banner
 {
+  padding-top: 200px;
   position: relative;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh;
   background: url(./img/bg.jpg);
@@ -83,11 +88,67 @@ header ul li a
   align-items: center;
 }
 
+ .banner h1{
+  display: flex;
+color: white;
+font-size: 150px;
+font-family: 'Dancing Script', cursive;
+}
+
+.banner h1 span 
+
+   {
+    font-family: 'Dancing Script', cursive;
+   color:#c9b92e ;
+    
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    }
+    @keyframes zoomInDown {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    } 
+  
+
+
 .Alsace {
   margin-left: 10px  ;
   position:relative;
     height: 80px;
   width: 80px;
+  
   
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
@@ -95,7 +156,10 @@ header ul li a
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    animation-delay : 2s;
+   
     }
+   
     @-webkit-keyframes rubberBand {
     0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -159,6 +223,7 @@ header ul li a
   
 .banner h2
 {
+padding-top: 50px;
   color: #fff;
   font-size: 90px;
   text-transform: uppercase;
@@ -601,9 +666,14 @@ p
   }
   .banner
   {
+    align-items: center;
     background-position: center;
   }
-  .banner h2
+
+  .banner h1 {
+text-align: center;
+  }
+  .banner  h2
   {
     font-size: 60px;
     padding: 0 50px;
