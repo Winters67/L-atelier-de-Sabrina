@@ -30,10 +30,9 @@ header
 header.sticky
 {
   padding: 5px 100px;
-
-  background-image: url(/img/Fond.jpg) ;
+  background-image: url(./img/Fond.jpg) ;
    background-size: cover;
-  border-bottom: 1px solid rgba(0,0,0,.1);
+  /* border-bottom: 1px solid rgba(0,0,0,.1); */
 
 }
 header .logo
@@ -75,7 +74,7 @@ header ul li a
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url(bg.jpg);
+  background: url(./bg.jpg);
   background-size: cover;
   
 
