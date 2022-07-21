@@ -30,7 +30,7 @@ header
 header.sticky
 {
   padding: 5px 100px;
-  background-image: url(./img/fond.jpg) ;
+  background-image: url(/img/fond.jpg) ;
    background-size: cover;
   /* border-bottom: 1px solid rgba(0,0,0,.1); */
 
